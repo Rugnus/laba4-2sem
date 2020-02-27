@@ -18,6 +18,8 @@ a {
   color: #fffdf9;
 }
 
+/* Header styles */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -61,7 +63,76 @@ ul li a:hover {
   font-size: 10.2rem;
 }
 
+/* About Section */
 
+.about {
+  width: 100%;
+  max-width: 192rem;
+  min-height: 70rem;
+}
+
+.about__heading {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.about__grid-items {
+  padding: 7rem 3%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 6rem 15rem;
+}
+
+.about__grid-item {
+  border: 2px solid #a3f7bf;
+  border-radius: 2%;
+  width: 30rem;
+  height: 40rem;
+
+}
+
+.about__grid-item h1 {
+  padding-top: 40%;
+  font-size: 2.0rem;
+  text-align: center;
+  color: #fff;
+}
+
+.about__grid-item p {
+  padding: 10% 13%;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+
+.item-1 {
+  position: relative;
+  background: url('images/item-1.png') center no-repeat;
+  background-size: cover;
+}
+
+.item-2 {
+  position: relative;
+  background: url('images/item-2.png') center no-repeat;
+  background-size: cover;
+}
+
+.item-3 {
+  position: relative;
+  background: url('images/item-3.png') center no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* Breakpoints */
 
 @media screen and (max-width: 480px) {
   .header__title {
