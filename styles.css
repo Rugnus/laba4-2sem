@@ -27,9 +27,10 @@ a {
 
 header {
   width: 100%;
-  max-width: 192rem;
+  max-width: 272rem;
   min-height: 100vh;
-  background: url(images/header_fon.jpg) center no-repeat;
+  background: url(images/header-back.png) center no-repeat;
+  background-position: fixed;
   background-size: cover;
 }
 
@@ -66,23 +67,28 @@ ul li a:hover {
 /* About Section */
 
 .about {
+  background: url(images/about-pot-back.png) center no-repeat;
+  background-size: cover;
+  background-position: fixed;
   width: 100%;
-  max-width: 192rem;
+  max-width: 272rem;
   min-height: 70rem;
 }
 
 .about__heading {
+  color: #fff;
   padding-top: 3rem;
   text-align: center;
   font-size: 2.6rem;
 }
 
 .about__grid-items {
-  padding: 7rem 3%;
+  padding: 7rem 0;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 6rem 15rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 6rem 5rem;
 }
 
 .about__grid-item {
