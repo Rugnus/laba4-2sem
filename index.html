@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- My Script -->
     <script src="index.js"></script>
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!-- Animations -->
@@ -29,20 +31,22 @@
 
     <header>
       <div class="container header__container">
-        <nav>
-          <ul>
+        <input type="checkbox" id="header__menu-checkbox">
+        <nav role="navigation">
+          <label for="header__menu-checkbox" class="toggle-button" data-open="MENU" data-close="CLOSE" onclick></label>
+          <ul class="header__main-menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <h1 class="header__title">Be Stronger.</h1>
+        <h1 class="header__title">Strong.</h1>
       </div>
       
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__container">
         <div class="about__heading">
           <h1>About</h1>
@@ -56,7 +60,7 @@
     </section>
 
 
-    <section class="services">
+    <section class="services" id="services">
 
       <div class="services__heading">
         <h1>Services</h1>
@@ -90,6 +94,19 @@
 
       </div>
     </section>
+
+    <footer id="contact">
+      <div class="footer__section">
+        <div class="footer_SM"></div>
+          <h3>We in SM:</h3>
+          <div class="footer__social-medias">
+            <i class="fab fa-facebook-square footer__icon_facebook footer__icon"></i>
+            <i class="fab fa-instagram footer__icon_instagram footer__icon"></i>
+            <i class="fab fa-vk footer__icon_vk footer__icon"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
