@@ -66,23 +66,23 @@ ul li a:hover {
 
 /* About Section */
 
-.about {
-  background: url(images/about-pot-back.png) center no-repeat;
+.services {
+  background: url(images/services-pot-back.png) center no-repeat fixed;
   background-size: cover;
-  background-position: fixed;
+  position: relative;
   width: 100%;
   max-width: 272rem;
-  min-height: 70rem;
+  min-height: 72.2rem;
 }
 
-.about__heading {
+.services__heading {
   color: #fff;
   padding-top: 3rem;
   text-align: center;
   font-size: 2.6rem;
 }
 
-.about__grid-items {
+.services__grid-items {
   padding: 7rem 0;
   position: relative;
   display: grid;
@@ -91,22 +91,22 @@ ul li a:hover {
   grid-gap: 6rem 5rem;
 }
 
-.about__grid-item {
-  border: 2px solid #a3f7bf;
+.services__grid-item {
+  border: 2px solid #333333;
   border-radius: 2%;
   width: 30rem;
   height: 40rem;
 
 }
 
-.about__grid-item h1 {
+.services__grid-item h1 {
   padding-top: 40%;
   font-size: 2.0rem;
   text-align: center;
   color: #fff;
 }
 
-.about__grid-item p {
+.services__grid-item p {
   padding: 10% 13%;
   font-size: 1.6rem;
   color: #fff;
@@ -131,8 +131,31 @@ ul li a:hover {
   background-size: cover;
 }
 
+/* About Section */
 
+.about {
+  width: 100%;
+  max-width: 272rem;
+  min-height: 80vh;
+  background: url(images/about-back.png) center no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}
 
+.about__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.about__heading p {
+  text-align: center;
+}
 
 
 
@@ -140,8 +163,21 @@ ul li a:hover {
 
 /* Breakpoints */
 
+
+
+
 @media screen and (max-width: 480px) {
   .header__title {
     font-size: 7rem;
+  }
+  
+  .about__heading p {
+    font-size: 1.7rem
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__heading p {
+    font-size: 1.8rem
   }
 }
