@@ -25,6 +25,7 @@ a {
 
 header {
   width: 100%;
+  max-width: 192rem;
   min-height: 100vh;
   background: url(images/header_fon.jpg) center no-repeat;
   background-size: cover;
@@ -54,7 +55,7 @@ ul li a:hover {
 
 .header__title {
   position: relative;
-  margin: 15rem 0;
+  margin: 13% 0;
   text-align: center;
   color: #a3f1af;
   font-size: 10.2rem;
