@@ -1,0 +1,124 @@
+/* Header styles */
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    width: 100%;
+    max-width: 272rem;
+    min-height: 100vh;
+    background: url(../images/header/header-back.png) center no-repeat;
+    background-position: fixed;
+    background-size: cover;
+  }
+  
+  nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  ul {
+    display: flex;
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    justify-content: space-around;
+    font-weight: 500;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a:hover {
+    color: #e8f9e9;
+    transition-delay: 0.3s;
+  }
+  
+  .header__title {
+    position: relative;
+    margin: 13% 0;
+    text-align: center;
+    color: #a3f1af;
+    font-size: 10.2rem;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header__title {
+      font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .header__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .header__title {
+      margin: 40% 0;
+    }
+  
+    .header__main-menu {
+      display: none;
+    }
+  
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 1.2rem;
+    }
+  
+    .main-menu a{
+      display: block;
+      padding: 0.8rem;
+    }
+    .toggle-button {
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      color: #000;
+    }
+  
+    .toggle-button::after {
+      content: attr(data-open);
+      color: white;
+      display: block;
+      transition-duration: 1s;
+      font-size: 1.5rem;
+    }
+  
+    #header__menu-checkbox:checked + nav[role=navigation] .header__main-menu {
+      display: grid;
+    }
+  
+    #header__menu-checkbox:checked + nav[role=navigation] .toggle-button:after {
+      content: attr(data-close);
+    }
+  }
+  
+  @media screen and (min-width: 480px) {
+    nav ul li a:after,
+    nav ul li a:before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0%;
+      background-color: #50d890;
+      transition: width .3s ease-in-out;
+    }
+  
+    nav ul li a:hover::after,
+    nav ul li a:focus::after,
+    nav ul li a:hover::before,
+    nav ul li a:focus::before {
+      width: 100%;
+    }
+  }
+  

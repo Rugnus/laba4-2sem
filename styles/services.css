@@ -1,0 +1,74 @@
+/* Services Section */
+
+.services {
+    background: url(../images/services/services-pot-back.png) center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    max-width: 272rem;
+    min-height: 72.2rem;
+  }
+  
+  .services__heading {
+    color: #fff;
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  
+  .services__grid-items {
+    padding: 7rem 0;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 6rem 5rem;
+  }
+  
+  .services__grid-item {
+    border: 2px solid #333333;
+    border-radius: 2%;
+    width: 30rem;
+    height: 40rem;
+  
+  }
+  
+  .services__grid-item h1 {
+    padding-top: 40%;
+    font-size: 2.0rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .services__grid-item p {
+    padding: 10% 13%;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  
+  
+  .item-1 {
+    position: relative;
+    background: url('../images/services/item-1.png') center no-repeat;
+    background-size: cover;
+  }
+  
+  .item-2 {
+    position: relative;
+    background: url('../images/services/item-2.png') center no-repeat;
+    background-size: cover;
+  }
+  
+  .item-3 {
+    position: relative;
+    background: url('../images/services/item-3.png') center no-repeat;
+    background-size: cover;
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .services__grid-item h1,
+    .services__grid-item p {
+    font-size: 2em;
+  }
+  }
