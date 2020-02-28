@@ -11,8 +11,7 @@
     width: 100%;
     max-width: 272rem;
     min-height: 100vh;
-    background: url(../images/header/header-back.png) center no-repeat;
-    background-position: fixed;
+    background: url(../images/header/header-back.png) center no-repeat fixed;
     background-size: cover;
   }
   
